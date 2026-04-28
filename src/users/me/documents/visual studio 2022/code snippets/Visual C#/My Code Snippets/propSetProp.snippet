@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>propSet</Title>
+			<Shortcut>propSet</Shortcut>
+			<Description>Code snippet for property using observable object set property method</Description>
+			<Author>David</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>property</ID>
+					<ToolTip>Property name</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+				<Literal>
+					<ID>SetterMethod</ID>
+					<ToolTip>name of method to set the property and raise the PropertyChanged event</ToolTip>
+					<Default>SetProperty</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[private $type$ _$property$;
+					public $type$ $property$
+					{
+						get => this._$property$;
+						set => _ = this.$SetterMethod$( ref this._$property$, value );
+					}
+				$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+
+
