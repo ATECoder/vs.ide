@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BuildPackages/BuildPackages.csproj" />
+  <Project Path="GitHubBuildPackages\GitHubBuildPackages.csproj" />
+  <Project Path="BitbucketBuildPackages\BitbucketBuildPackages.csproj" />
+</Solution>
