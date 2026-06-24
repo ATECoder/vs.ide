@@ -1,10 +1,17 @@
 <Project>
   <ItemGroup>
-    <!-- The default profile of the MSTest.SDK already included the code coverage package,
-       which does not seem to get updated when the MSTest.SDK package gets updated.
-       This results in a warning about the old version of newtonsoft.json.
-       The following line does not update the code coverage package in the release folder
+    <!-- include this file in the directory.build.props of MS Test projects. -->
+    <!-- The default profile of the MSTest.SDK already includes a code coverage package.
+	  This package, however, is typically earlier than the latest release. Consequently,
+      the package is tagged for update when managing the packages for the solution or the project.
+	  Yet, including this package with the Update tag, does not seem to get get incorporated as the
+	  package manager still tags the update as not updated.
+      The following line does not update the code coverage package in the release folder
     -->
-    <PackageReference Update="Microsoft.Testing.Extensions.CodeCoverage" Version="18.7.0" />
+    <PackageReference Update="Microsoft.Testing.Extensions.CodeCoverage" Version="18.8.0" />
+    <!-- Suppress warning about newton soft 9.0.1 which is part of the .net fx testing extensions code coverage.
+      Otherwise a warning is given about the old version of newtonsoft.json.
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-5crp-9r3c-p9vr" />
+    -->
   </ItemGroup>
 </Project>

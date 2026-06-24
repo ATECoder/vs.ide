@@ -1,15 +1,11 @@
 <Project>
+  <!-- include this file in the directory.build.props of non MS Test projects. -->
   <PropertyGroup>
     <LangVersion>preview</LangVersion>
     <NuGetAudit>true</NuGetAudit>
     <WaningsNotAsErrors>NU1900;NU1901;NU1802</WaningsNotAsErrors>
   </PropertyGroup>
 
-  <ItemGroup>
-    <!-- Suppress warning about newton soft 9.0.1 which is part of the .net fx testing extensions code coverage. -->
-    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-5crp-9r3c-p9vr" />
-  </ItemGroup>
-  
   <ItemGroup>
     <PackageReference Include="SourceLink.Copy.PdbFiles" Version="2.8.3" PrivateAssets="All" />
   </ItemGroup>
