@@ -6,6 +6,7 @@ Notable changes to the `cc.isr.vi` solution are documented in this file using th
 
 ## [8.1.9673] - 2026-06-26
 Add uno.sdk to the global.Json file.
+Add visual studio issues and workaround documents.
 
 ## [8.1.9613] - 2026-04-27
 * Created.
