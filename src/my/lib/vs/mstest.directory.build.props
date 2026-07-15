@@ -8,7 +8,7 @@
 	  package manager still tags the update as not updated.
       The following line does not update the code coverage package in the release folder
     -->
-    <PackageReference Update="Microsoft.Testing.Extensions.CodeCoverage" Version="18.8.0" />
+    <PackageReference Update="Microsoft.Testing.Extensions.CodeCoverage" Version="18.9.0" />
     <!-- Suppress warning about newton soft 9.0.1 which is part of the .net fx testing extensions code coverage.
       Otherwise a warning is given about the old version of newtonsoft.json.
     <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-5crp-9r3c-p9vr" />
