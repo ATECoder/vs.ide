@@ -1,4 +1,11 @@
 <Project>
+
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+    <NuGetAudit>true</NuGetAudit>
+    <WaningsNotAsErrors>NU1900;NU1901;NU1802</WaningsNotAsErrors>
+  </PropertyGroup>
+
   <ItemGroup>
     <!-- include this file in the directory.build.props of MS Test projects. -->
     <!-- The default profile of the MSTest.SDK already includes a code coverage package.
@@ -14,4 +21,5 @@
     <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-5crp-9r3c-p9vr" />
     -->
   </ItemGroup>
+  
 </Project>
