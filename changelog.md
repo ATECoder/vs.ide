@@ -2,7 +2,11 @@
 Notable changes to the `cc.isr.vi` solution are documented in this file using the 
 [Keep a Changelog] style. The dates specified are in coordinated universal time (UTC).
 
-[1.0.9750]: https://github.com/ATECoder/vs.ide.git
+[1.0.9751]: https://github.com/ATECoder/vs.ide.git
+
+## [1.0.9751] - 2026-09-12
+- Update Code Coverage package bersion to 18.11.2.
+- Add code coverage to the shared build packages project.
 
 ## [1.0.9750] - 2026-09-11
 - Reset change log revision to 1.0.
